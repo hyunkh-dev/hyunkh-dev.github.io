@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hyunkh-dev | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>hyunkh-dev</h1>
+      <p class="subtitle">CI/CD · DevOps · Automation</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2 class="section-title">진행 중인 프로젝트</h2>
+      <div class="cards">
+
+        <div class="card status-done">
+          <div class="card-header">
+            <span class="badge badge-done">완료</span>
+            <span class="tech">GitHub Pages · HTML/CSS</span>
+          </div>
+          <h3>포트폴리오 웹사이트</h3>
+          <p>진행 중인 작업을 기록하고 공유하는 개인 포트폴리오 페이지. GitHub Pages 무료 호스팅 사용.</p>
+          <ul class="checklist">
+            <li class="done">페이지 디자인 및 구현</li>
+            <li class="done">GitHub Pages 배포</li>
+          </ul>
+        </div>
+
+        <div class="card status-progress">
+          <div class="card-header">
+            <span class="badge badge-progress">진행 중</span>
+            <span class="tech">Jenkins · Groovy · MCP</span>
+          </div>
+          <h3>Jenkins CI/CD + MCP 연동</h3>
+          <p>Jenkins를 Docker로 구축하고, MCP 서버를 통해 Claude에서 빌드를 트리거·모니터링하는 자동화 파이프라인 구성.</p>
+          <ul class="checklist">
+            <li>Docker로 Jenkins 설치</li>
+            <li>샘플 프로젝트 Jenkinsfile 작성</li>
+            <li>MCP 서버 설치 및 연결</li>
+            <li>Claude에서 빌드 제어</li>
+          </ul>
+        </div>
+
+        <div class="card status-todo">
+          <div class="card-header">
+            <span class="badge badge-todo">예정</span>
+            <span class="tech">TeamCity · Shell · MCP</span>
+          </div>
+          <h3>TeamCity CI/CD + MCP 연동</h3>
+          <p>TeamCity를 Docker로 구축하고, Shell/Python 빌드 스텝을 구성. MCP를 통해 Claude와 연동.</p>
+          <ul class="checklist">
+            <li>Docker로 TeamCity 설치</li>
+            <li>샘플 프로젝트 빌드 설정</li>
+            <li>MCP 서버 설치 및 연결</li>
+            <li>Claude에서 빌드 제어</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">기술 스택</h2>
+      <div class="tags">
+        <span class="tag">Jenkins</span>
+        <span class="tag">TeamCity</span>
+        <span class="tag">Docker</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag">Groovy</span>
+        <span class="tag">Shell Script</span>
+        <span class="tag">MCP</span>
+        <span class="tag">Claude Code</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://github.com/hyunkh-dev" target="_blank">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
