@@ -60,19 +60,19 @@
           </ul>
         </div>
 
-        <div class="card status-progress">
+        <div class="card status-done">
           <div class="card-header">
-            <span class="badge badge-progress">진행 중</span>
+            <span class="badge badge-done">완료</span>
             <span class="tech">Jenkins · Groovy · MCP</span>
           </div>
           <h3>Jenkins CI/CD + MCP 연동</h3>
-          <p>Jenkins를 Docker로 구축하고, MCP 서버를 통해 Claude에서 빌드를 트리거·모니터링하는 자동화 파이프라인 구성.</p>
+          <p>Jenkins를 직접 설치(Java 21)하고, MCP 서버를 통해 Claude가 직접 파이프라인 잡을 생성하고 빌드를 트리거·성공까지 확인.</p>
           <ul class="checklist">
-            <li>Docker 설치</li>
-            <li>Docker로 Jenkins 설치</li>
-            <li>샘플 프로젝트 + Jenkinsfile 작성</li>
-            <li>MCP 서버 설치 및 연결</li>
-            <li>Claude에서 빌드 제어</li>
+            <li class="done">Java 21 + Jenkins 직접 설치</li>
+            <li class="done">샘플 프로젝트 + Jenkinsfile 작성</li>
+            <li class="done">Jenkins MCP 서버 설치 및 연결</li>
+            <li class="done">Claude에서 파이프라인 잡 생성</li>
+            <li class="done">빌드 #1 트리거 → 성공 (4.7초)</li>
           </ul>
         </div>
 
@@ -113,14 +113,16 @@
         </div>
 
         <div class="log-entry">
-          <div class="log-date">2025-06-15</div>
+          <div class="log-date">2026-06-15</div>
           <div class="log-content">
-            <div class="log-title">Jenkins 환경 구축 시작</div>
-            <p>Docker 기반 Jenkins 설치 및 Groovy 파이프라인 구성 시작. MCP 서버를 통한 Claude 연동까지 목표.</p>
+            <div class="log-title">Jenkins CI/CD + MCP 연동 완료</div>
+            <p>Java 21 + Jenkins 직접 설치, Groovy 4단계 파이프라인(Checkout→Build→Test→Deploy) 구성 완료. MCP 서버(@alexsarrell/jenkins-mcp-server)를 통해 Claude Code가 직접 REST API로 파이프라인 잡을 생성하고 빌드 #1을 트리거해 SUCCESS 확인.</p>
             <div class="log-tags">
-              <span class="log-tag">Docker</span>
               <span class="log-tag">Jenkins</span>
-              <span class="log-tag">진행 중</span>
+              <span class="log-tag">Groovy</span>
+              <span class="log-tag">MCP</span>
+              <span class="log-tag">Claude Code</span>
+              <span class="log-tag">Java 21</span>
             </div>
           </div>
         </div>
