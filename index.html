@@ -11,29 +11,112 @@
   <header>
     <div class="header-inner">
       <h1>hyunkh-dev</h1>
-      <p class="subtitle">CI/CD · DevOps · AI 협업 개발</p>
-      <p class="intro">Jenkins, TeamCity 파이프라인 구축과 MCP를 활용한 AI 연동을 포트폴리오로 기록합니다.</p>
+      <p class="subtitle">CI/CD · DevOps · Automation</p>
+      <div class="ai-badge">
+        <span class="ai-icon">✦</span>
+        Claude Code (AI)와 함께 구축한 포트폴리오
+      </div>
     </div>
   </header>
 
   <main>
 
+    <!-- AI 활용 안내 -->
+    <section class="section">
+      <h2 class="section-title">AI 활용 방식</h2>
+      <div class="ai-headline">
+        <span class="ai-pct">100%</span>
+        <div>
+          <strong>이 포트폴리오의 모든 코드·설정·배포는 AI가 직접 수행했습니다.</strong>
+          <p>사람이 한 것: 방향 결정과 피드백. 나머지 전부: Claude Code.</p>
+        </div>
+      </div>
+      <div class="ai-cards">
+
+        <div class="ai-card">
+          <div class="ai-card-head">
+            <span class="ai-card-icon">✦</span>
+            <div>
+              <div class="ai-card-name">Claude Code</div>
+              <div class="ai-card-sub"><a href="https://claude.ai/code" target="_blank">claude.ai/code</a></div>
+            </div>
+          </div>
+          <ul class="ai-card-list">
+            <li>포트폴리오 HTML/CSS 작성</li>
+            <li>GitHub 저장소 생성 및 배포</li>
+            <li>Jenkins 파이프라인 잡 생성</li>
+            <li>빌드 트리거 및 결과 확인</li>
+            <li>이 페이지 전체 업데이트</li>
+          </ul>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-head">
+            <span class="ai-card-icon">⚡</span>
+            <div>
+              <div class="ai-card-name">Superpowers</div>
+              <div class="ai-card-sub"><a href="https://github.com/obra/superpowers" target="_blank">github.com/obra/superpowers</a></div>
+            </div>
+          </div>
+          <ul class="ai-card-list">
+            <li>Claude Code 플러그인 (14개 스킬)</li>
+            <li>브레인스토밍 스킬로 설계 진행</li>
+            <li>체계적인 개발 워크플로우 적용</li>
+            <li>TDD·디버깅·코드리뷰 자동화</li>
+          </ul>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-head">
+            <span class="ai-card-icon">📚</span>
+            <div>
+              <div class="ai-card-name">LLM Wiki</div>
+              <div class="ai-card-sub"><a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank">Karpathy 아이디어</a></div>
+            </div>
+          </div>
+          <ul class="ai-card-list">
+            <li>대화 내용을 마크다운으로 자동 기록</li>
+            <li>다음 세션에서 이전 맥락 자동 참조</li>
+            <li>~/.claude/wiki/ 에 로컬 저장</li>
+            <li>Claude가 직접 관리·업데이트</li>
+          </ul>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-head">
+            <span class="ai-card-icon">🔌</span>
+            <div>
+              <div class="ai-card-name">MCP</div>
+              <div class="ai-card-sub">Model Context Protocol</div>
+            </div>
+          </div>
+          <ul class="ai-card-list">
+            <li>Claude ↔ Jenkins 직접 연결</li>
+            <li>파이프라인 잡 생성 자동화</li>
+            <li>빌드 트리거·상태 조회</li>
+            <li>사람 개입 없이 CI/CD 제어</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
     <!-- 프로젝트 현황 -->
     <section class="section">
-      <h2 class="section-title">프로젝트</h2>
+      <h2 class="section-title">프로젝트 현황</h2>
       <div class="cards">
 
         <div class="card status-done">
           <div class="card-header">
             <span class="badge badge-done">완료</span>
-            <span class="tech">GitHub Pages</span>
+            <span class="tech">GitHub Pages · HTML/CSS</span>
           </div>
           <h3>포트폴리오 웹사이트</h3>
-          <p>진행 중인 작업을 기록하는 개인 포트폴리오. GitHub Pages 무료 호스팅.</p>
+          <p>진행 중인 작업을 기록하고 공유하는 개인 포트폴리오 페이지. GitHub Pages 무료 호스팅 사용.</p>
           <ul class="checklist">
-            <li class="done">페이지 설계 및 구현</li>
+            <li class="done">페이지 디자인 및 구현</li>
             <li class="done">GitHub Pages 배포</li>
-            <li class="done">AI 협업 과정 기록</li>
+            <li class="done">AI 활용 내용 기록</li>
           </ul>
         </div>
 
@@ -43,12 +126,13 @@
             <span class="tech">Jenkins · Groovy · MCP</span>
           </div>
           <h3>Jenkins CI/CD + MCP 연동</h3>
-          <p>Java 21 + Jenkins 직접 설치, Groovy 4단계 파이프라인 구성. MCP 서버로 Claude가 직접 빌드를 제어.</p>
+          <p>Jenkins를 직접 설치(Java 21)하고, MCP 서버를 통해 Claude가 직접 파이프라인 잡을 생성하고 빌드를 트리거·성공까지 확인.</p>
           <ul class="checklist">
-            <li class="done">Java 21 + Jenkins 설치</li>
-            <li class="done">Groovy 파이프라인 작성</li>
-            <li class="done">Jenkins MCP 서버 연결</li>
-            <li class="done">빌드 #1 → SUCCESS (4.7초)</li>
+            <li class="done">Java 21 + Jenkins 직접 설치</li>
+            <li class="done">샘플 프로젝트 + Jenkinsfile 작성</li>
+            <li class="done">Jenkins MCP 서버 설치 및 연결</li>
+            <li class="done">Claude에서 파이프라인 잡 생성</li>
+            <li class="done">빌드 #1 트리거 → 성공 (4.7초)</li>
           </ul>
         </div>
 
@@ -58,11 +142,11 @@
             <span class="tech">TeamCity · Shell · MCP</span>
           </div>
           <h3>TeamCity CI/CD + MCP 연동</h3>
-          <p>TeamCity 설치 후 Shell/Python 빌드 스텝 구성. MCP를 통해 Claude와 연동.</p>
+          <p>TeamCity를 Docker로 구축하고, Shell/Python 빌드 스텝을 구성. MCP를 통해 Claude와 연동.</p>
           <ul class="checklist">
-            <li>TeamCity 설치</li>
-            <li>샘플 빌드 설정</li>
-            <li>MCP 서버 연결</li>
+            <li>Docker로 TeamCity 설치</li>
+            <li>샘플 프로젝트 빌드 설정</li>
+            <li>MCP 서버 설치 및 연결</li>
             <li>Claude에서 빌드 제어</li>
           </ul>
         </div>
@@ -76,15 +160,14 @@
       <div class="log">
 
         <div class="log-entry">
-          <div class="log-date">2026-06-15</div>
+          <div class="log-date">2025-06-15</div>
           <div class="log-content">
-            <div class="log-title">Jenkins CI/CD + MCP 연동 완료</div>
-            <p>Java 21 + Jenkins 직접 설치, Groovy 4단계 파이프라인(Checkout→Build→Test→Deploy) 구성. MCP 서버를 통해 Claude Code가 파이프라인 잡을 생성하고 빌드 #1을 트리거 — SUCCESS.</p>
+            <div class="log-title">포트폴리오 사이트 배포</div>
+            <p>Claude Code와 함께 GitHub Pages 기반 포트폴리오 페이지 설계 및 배포. gh CLI 설치, 저장소 자동 생성, GitHub Pages 활성화까지 전 과정을 AI와 함께 진행.</p>
             <div class="log-tags">
-              <span class="log-tag">Jenkins</span>
-              <span class="log-tag">Groovy</span>
-              <span class="log-tag">MCP</span>
-              <span class="log-tag">Java 21</span>
+              <span class="log-tag">GitHub Pages</span>
+              <span class="log-tag">gh CLI</span>
+              <span class="log-tag">Claude Code</span>
             </div>
           </div>
         </div>
@@ -92,12 +175,14 @@
         <div class="log-entry">
           <div class="log-date">2026-06-15</div>
           <div class="log-content">
-            <div class="log-title">포트폴리오 사이트 배포</div>
-            <p>Claude Code와 함께 GitHub Pages 기반 포트폴리오 설계 및 배포. gh CLI로 저장소 생성, GitHub Pages 활성화, 이후 Jenkins 완료로 카드 업데이트.</p>
+            <div class="log-title">Jenkins CI/CD + MCP 연동 완료</div>
+            <p>Java 21 + Jenkins 직접 설치, Groovy 4단계 파이프라인(Checkout→Build→Test→Deploy) 구성 완료. MCP 서버(@alexsarrell/jenkins-mcp-server)를 통해 Claude Code가 직접 REST API로 파이프라인 잡을 생성하고 빌드 #1을 트리거해 SUCCESS 확인.</p>
             <div class="log-tags">
-              <span class="log-tag">GitHub Pages</span>
-              <span class="log-tag">gh CLI</span>
+              <span class="log-tag">Jenkins</span>
+              <span class="log-tag">Groovy</span>
+              <span class="log-tag">MCP</span>
               <span class="log-tag">Claude Code</span>
+              <span class="log-tag">Java 21</span>
             </div>
           </div>
         </div>
@@ -111,31 +196,23 @@
       <div class="tags">
         <span class="tag">Jenkins</span>
         <span class="tag">TeamCity</span>
+        <span class="tag">Docker</span>
         <span class="tag">Groovy</span>
         <span class="tag">Shell Script</span>
-        <span class="tag">Python</span>
         <span class="tag">MCP</span>
-        <span class="tag">GitHub Pages</span>
         <span class="tag">Claude Code</span>
+        <span class="tag">GitHub Pages</span>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <div class="footer-inner">
-      <div class="footer-links">
-        <a href="https://github.com/hyunkh-dev" target="_blank">GitHub</a>
-      </div>
-      <div class="ai-stack">
-        <span class="ai-stack-label">Built with</span>
-        <a href="https://claude.ai/code" target="_blank" class="ai-tool-link">Claude Code</a>
-        <span class="ai-stack-sep">·</span>
-        <a href="https://github.com/obra/superpowers" target="_blank" class="ai-tool-link">Superpowers</a>
-        <span class="ai-stack-sep">·</span>
-        <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank" class="ai-tool-link">LLM Wiki</a>
-      </div>
-    </div>
+    <p>
+      <a href="https://github.com/hyunkh-dev" target="_blank">GitHub</a>
+      &nbsp;·&nbsp;
+      <span>Built with <span class="ai-foot">✦ Claude Code</span> · <a href="https://github.com/obra/superpowers" target="_blank">Superpowers</a> · <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank">LLM Wiki</a></span>
+    </p>
   </footer>
 
 </body>
